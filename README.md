@@ -37,12 +37,13 @@
 
 	多行注释（ /* */ ）：/*开头 + 换行 + * + 空格 + 注释文字 + … + 换行 + */；多行注释通常用于函数注释，特殊要求请参考javadoc。
 	常用关键字：@param、@return、@example等
-例如：
+	例如：
 	/*
-注释说明
-@关键字
+	 * 注释说明
+	 * @关键字
 	*/
-tip：注释对于任何语言开发都是非常重要的，对个人对团队都非常有帮助
+	
+	tip：注释对于任何语言开发都是非常重要的，对个人对团队都非常有帮助
 
 ## html规范
 	1. 缩进：4个空格，嵌套节点需要缩进。
@@ -51,8 +52,7 @@ tip：注释对于任何语言开发都是非常重要的，对个人对团队�
 	4. class类名推荐使用中划线连接。例如：<div class=“app-container”></div>
 	字符编码：指定字符编码UTF-8。例如：<meta charset=“UTF-8” />
 	5. html同样是代码最少原则，即避免多余节点。
-	6. 推荐使用语义化标签，有利于SEO，也有利于阅读。例如<header>
-</header>等标签。
+	6. 推荐使用语义化标签，有利于SEO，也有利于阅读。例如<header></header>等标签。
 	7. js脚本引入尽量放在body底部，并且使用async属性
 	
 ## css规范
@@ -60,14 +60,13 @@ tip：注释对于任何语言开发都是非常重要的，对个人对团队�
 	2. 注释：统一使用多行注释（ /* */ ）。
 	3. 统一使用双引号，括号内属性值需要用双引号包裹；每个声明之后要添加分号（ ；）。
 	4. 正常情况下，由于id选择器权重很高，不应该使用id用于样式，推荐使用class。
-	5. css同样是代码越少越好，所以，尽量使用缩写属性。例如：
-margin: 0 10px 12px; 优于 margin-right: 10px; margin-bottom: 12px; margin-right: 10px;
+	5. css同样是代码越少越好，所以，尽量使用缩写属性。例如：margin: 0 10px 12px; 优于 margin-right: 10px; margin-bottom: 12px; margin-right: 10px;
 	6. 属性编写顺序：遵从由外到内的原则；具体顺序：
-	a. 定位属性：position、display、float、left、top … 等
-	b. 自身属性：width、height … 等
-	c. 文字属性：font-family、font-size … 等
-	d. 文本属性：text-align、vertical-align … 等
-	d. 其他：content、box-shadow … 等
+		a. 定位属性：position、display、float、left、top … 等
+		b. 自身属性：width、height … 等
+		c. 文字属性：font-family、font-size … 等
+		d. 文本属性：text-align、vertical-align … 等
+		d. 其他：content、box-shadow … 等
 ## js规范
 	a. 避免污染全局命名空间，使用模块化
 	b. 使用严格模式
